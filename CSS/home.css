@@ -1,0 +1,509 @@
+@charset "UTF-8";
+
+@keyframes animacao-ul{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes animacao-principal {
+    to{opacity: 1;}
+    from{opacity: 0;}
+}
+@keyframes animation2{
+    0%{opacity: 0;}
+    25%{opacity: 0.25;}
+    50%{opacity: 0.5;}
+    75%{opacity: 0.75;}
+    100%{opacity: 1;}
+}
+@font-face {
+    font-family: "FontAwesome";
+    src: url(fonts/FontAwesome.otf);
+}
+@font-face {
+    font-family: "emporio luna";
+    src: url(fonts/castellar.ttf);
+}
+*{
+    margin: 0;
+}
+
+@media(min-width:1770px){
+
+.menu ul{
+    position:absolute;
+    left: auto;
+}
+}
+
+body{
+    animation-name: animacao-principal;
+    animation-duration: 3s;
+}
+.Emporio{
+    font-family: "emporio luna" ;
+    text-align: center;
+    font-size: 1.6em ;
+    color: red;
+    display: inline-flex;
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+.Luna{
+    font-family: "emporio luna";
+    text-align: center;
+    font-size: 1.6em ;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.OUTLET{
+    color: rgb(0, 0, 0);
+    font-family: "emporio luna";
+    font-size: 1em;
+    display: block;
+    position: fixed;
+    top: 50px;
+    margin-bottom: 0px;
+    margin-top: 9px;
+    left: 120px;
+}
+
+#container{ 
+    margin: auto;
+    display: flex;
+    animation-name: anima1;
+    animation-duration: 5s;
+    object-fit: cover;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position:fixed;
+    top: 0px;
+    left:0px;
+    overflow: hidden;
+    background-color: transparent;
+    margin-left: 0px;
+    object-fit: cover;
+    transition: ease-in-out all .5s;
+    z-index: 1;
+}
+#container:hover{
+    background-color: rgb(255, 255, 255);
+    transition: all .5s ease-in;
+    box-shadow:-5px -4px 14px black;
+}
+#container:hover .Luna{
+    color: rgb(0, 0, 0);
+    transition: all .5s ease-in;
+}
+#container:hover .OUTLET{
+    color: lightblue;
+    transition: all .5s ease-in;
+}
+.navigation{
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    right: 0px;
+    top: 40px;
+    object-fit: cover;
+}
+.ativo{
+    color: red;
+    padding: 50px 50px;
+}
+#produtos:hover{
+    color: red;
+    transition: all .5s ease-in-out;
+}
+#Produtos::after{
+    content: "\f077";
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    color: #1A1818;
+    margin-left: 8px;
+    transition: all .2s;
+    font-family:'FontAwesome';
+    margin-bottom: 2px;
+    transition: all .5s ease-in;
+    z-index: 1 ;
+}
+#Produtos:hover::after{
+    color: red;
+}
+
+#calçados{
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 10px;
+    margin-left:10px;
+}
+#calçados:hover {
+    color: rgba(92, 92, 92, 0.666);
+    font-weight: 700;
+    position: relative;
+}
+
+
+ ul{
+    object-fit: cover;
+    visibility: hidden; 
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    border-radius: 2.5px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 30px;
+    height: 320px;
+    width: 600px;    
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px;
+}
+#imagens{
+    display: flex;
+    justify-content: center;
+}
+input#sub-produtos:checked ~ ul {
+    visibility:visible;
+
+}
+#sub-produtos:checked ~ #Produtos::after{
+    transform: rotate(180deg);
+  
+}
+.menu-img{
+    max-width: 170px;
+    max-height: 170px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 80px;
+    left: 155px;
+}
+
+.menu-img1{
+    max-width: 170px;
+    max-height: 170px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 80px;
+    right: 90px;
+}
+
+#escrito{
+    position: absolute;
+    top: 46px;
+    left: 160px;
+    text-decoration: none;
+    color: black;
+}
+#escrito1{
+    position: absolute;
+    top: 46px;
+    right: 90px;
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.menu ul li{
+    float: left;
+}
+
+label[for="botãomenu"]{
+    display: none;
+    font-size: 30px;
+}
+
+#botãomenu{
+    display: none;
+}
+
+.lazyslider img{
+    width: 700px;
+    height: 500px;
+}
+
+
+footer{
+    background-color: rgba(225, 33, 33, 0.796);
+    animation-name: anima1;
+    animation-duration: 12s;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    max-height: 115px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -7px 2px 17px 0px black
+}
+.footer{
+    display: flex;
+    margin-left: 25px;   
+    align-items:center;
+}
+.endereço{
+    margin-right:10pc;
+}
+#título{
+    font-size: 1.5em;
+    color: lightblue;
+    margin: 0px;
+}
+
+.EL{
+    display: flex;
+    color: black;
+    font-size: 1em;
+    margin: 0;
+}
+#end{
+    color: white;
+    margin: 0;
+    font-size: 0.8em;
+}
+.logos{
+    position: absolute;
+}
+.insta{
+    width: 30px;
+    height: 30px;
+}
+.facebook{
+    width: 30px;
+    height: 30px;
+}
+.zap{
+    width: 33px;
+    height: 33px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.redesociais{
+    margin-top: -55px;
+    margin-right: 10pc;
+}
+.contato{
+    margin-left: 40px;
+    margin-top: -20px;
+}
+#contato{
+    color: white;
+    padding-left: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#sub-produtos{display: none;}
+@media(max-width:1047px){
+.redesociais{
+    margin-right: 5pc;
+}
+.endereço{
+    margin-right:5pc;
+}
+}
+@media (max-width: 1180px ){
+.Emporio{
+    font-family: "emporio luna" ;
+    text-align: center;
+    font-size: 1.6em ;
+    color: red;
+    display: inline-flex;
+    margin-left: 20px;
+    margin-top: 40px;
+    
+}
+.Luna{
+    font-family: "emporio luna";
+    text-align: center;
+    font-size: 1.6em ;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.OUTLET{
+    color: rgb(0, 0, 0);
+    font-family: "emporio luna";
+    font-size: 1em;
+    display: block;
+    position: fixed;
+    top: 60px;
+    margin-bottom: 0px;
+    margin-top: 9px;
+    left: 130px;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+#container .menu ul li:hover #ul {
+    display: none;
+}
+#Produtos{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.navigation{
+    display: flex;    
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 37%;
+        right: 37%;
+        visibility: hidden;
+        font-size: x-large;
+}
+#botãomenu:checked ~ .navigation{
+    visibility: visible;
+}
+#botãomenu:checked ~ footer{
+    display: none;
+}
+ul{
+    object-fit: cover;
+    visibility: hidden; 
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 100vh;
+    height: 40vh;
+    border-radius: 2.5px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    box-shadow:2px 5px 7px  black;
+    top: 30px;
+}
+input#sub-produtos:checked ~ ul{
+    position: relative;
+}
+.nav:hover{
+    color: red;
+}
+#calçados:hover{
+    display: none;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+#botãomenu:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+}
+
+#botãomenu:checked ~ label .hamburguer::before {
+    transform: rotate(90deg);
+    top: 0px;
+}
+#botãomenu:checked ~ label .hamburguer::after {
+    transform: rotate(90deg);
+    bottom: 0px;
+}
+.hamburguer{
+    display: block;
+    background: black;
+    width: 30px;
+    height: 2.5px;
+    position: relative;
+    left: 9px;
+    top: 22px;
+    transition: .5s ease-in-out;
+    border-radius: 5px;
+}
+.hamburguer::before,.hamburguer::after{
+    content: '';
+    display: block;
+    background: black;
+    width: 30px;
+    height: 2.5px;
+    position: absolute;
+    transition: .5s ease-in-out;
+    border-radius: 5px;
+}
+.hamburguer::before{
+    top: -10px;
+}
+.hamburguer::after{
+    bottom: -10px;
+}
+
+label[for="botãomenu"]{
+    display: block;
+    margin-left:50px; 
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.959); 
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    cursor: pointer;
+    box-shadow: 0 0 0  rgb(255, 255, 255);
+    border-radius: 100px;
+    transition: box-shadow .7s ease-in-out;
+    top: 10px;
+    right: 10px;
+    margin: 10px;
+}
+
+#botãomenu:checked ~ label{
+    box-shadow: 0 0 0 1000vw white, 0 0 0 1000vh white;
+}
+#Produtos::after{
+    display: none;
+}
+.menu ul #ul{
+    display: none;
+}
+
+.menu ul li{
+    float: none;
+}
+li{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+@media (max-width:550px) {
+    .navigation{
+        right: 23%;
+    }
+}
+@media (max-width:942px){
+    .endereço{
+        display: none;
+    }
+}
+}
+@media (max-height:613px) {
+    footer{
+        display: none;
+    }
+}

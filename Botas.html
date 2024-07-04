@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Catálogo-Produtos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Calçados.css">
+    <script src="Images.js"></script>
+    <script src="filtragem.js"></script>
+    <script src="pageYscroll.js"></script>
+    <link rel="stylesheet" href="styles-Btn.css">
+    <link rel="stylesheet" href="sizes.css">
+
+    <script>
+        
+    </script>
+
+    <link rel="shortcut icon" href="Imagens/WhatsApp_Image_2021-06-29_at_14.17.07-removebg.png" type="image/x-icon">
+    <title>Botas</title>
+</head>
+<body >
+  
+    <header id="container"> 
+        <a href="Home.html">
+            <h1 class="Emporio"> EMPÓRIO </h1> 
+        </a>
+        <a href="Home.html">
+            <h1 class="Luna">LUNA</h1>
+        </a>
+        <a href="Home.html">
+            <p class="OUTLET">OUTLET</p>
+        </a>
+     
+    <nav class="menu">
+        
+             
+ <input type="checkbox" id="botãomenu">
+             <label for="botãomenu"> 
+                <span class="hamburguer"></span>
+             </label>
+      
+           
+        <div class="navigation">
+                    <li><a id="Home" class="nav" href="Home.html">HOME</a></li>  
+                    <li><a  id="ativo" href="Produtos.html"> PRODUTOS </a></li> 
+                    <li><a id="Localização" class="nav" href="Localização.html">LOCALIZAÇÃO</a></li>
+                    <li><a id="Contato" class="nav" href="Contato.html">CONTATO</a></li>
+       
+        </div>
+    </nav>
+
+</header>
+
+<main>
+<div class="Botas">
+           
+        <div id="filtragem">
+             
+            <input id="filtrar" type="checkbox">
+            <label id="filter" for="filtrar">Filtrar  </label>
+            <div id="withoutFiltragem">
+                <div class="Classification">
+                    <h1 id="categorias">Categorias</h1>
+                        <div id="produtos">
+                            <a href="Todos.html"><h3 id="products">Todos os produtos </h3></a>
+                            <a href="Bolsas.html"><h3 id="products">Bolsas</h3></a>
+                            <a href="Tênis.html"><h3 id="products">Tênis</h3></a>
+                            <a href="Cinto.html"><h3 id="products">Cinto</h3></a>
+                            <a href="Scarpin e Saltos.html"><h3 id="products">Salto e Scarpin</h3></a>
+                            <a href="Sandália.html"><h3 id="products">Sandália</h3></a>
+                        </div>
+                </div>
+                <div class="filter-btn">
+                    <div id="input">
+                        <input type="checkbox" value="34" id="btn-34"> 
+                        <input type="checkbox" value="35" id="btn-35">
+                        <input type="checkbox" value="36" id="btn-36">
+                        <input type="checkbox" value="37" id="btn-37">
+                        <input type="checkbox" value="38" id="btn-38">
+                        <input type="checkbox" value="39" id="btn-39">
+                    </div>
+                    <h1 id="categorias"> Tamanhos</h1>
+                        <label for="btn-34" id="b-34">34</label>
+                        <label for="btn-35" id="b-35">35</label>
+                        <label for="btn-36" id="b-36">36</label>
+                        <label for="btn-37" id="b-37">37</label>
+                        <label for="btn-38" id="b-38">38</label>
+                        <label for="btn-39" id="b-39">39</label>
+                </div>
+            </div>
+        </div>
+
+       <div id="images">
+<!--Números 34-->
+              <div class="image-produtos" id="n-34-35-37">
+                        <div id="parte-de-cima">
+                            <img src="Imagens/Bota 100% couro.jpg" id="Bota100" class="image-fluid" alt="" onmouseenter="Entrou3()">
+                            <img src="Imagens/Bota_100__couro-removebg-preview-removebg-preview.png" id="Bota-100" class="hover" alt="" onmouseout="Saiu3()">
+                        </div>
+                        <div id="parte-de-baixo">
+                            <h1 id="nome">Bota 100% couro - Empório Luna</h1>
+                            <p id="preço">R$ 179.90</p>
+                        </div>
+                        <a href="Ctt.htm" target="blank">
+                            <div id="comprar">
+                                <i id="whatsapp"><svg enable-background="new 0 0 512 512" width="20" height="20" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 9.10936 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg> </a></i>
+                                <a href="Ctt.htm" target="blank"><span>Compre via WhatsApp</span></a>
+                        </div>
+                        </a>
+               </div>
+
+               <div class="image-produtos" id="n-34-35-36-37-38">
+                    <div id="parte-de-cima">
+                       <img src="Imagens/Capodarte-botas.jpg" id="capodarte"  class="image-fluid" alt="" onmouseenter="Entrou()">
+                        <img src="Imagens/Capodarte-botas-removebg-preview.png"  id="capodarteBota" class="hover" alt=""  onmouseout="Saiu()">
+                    </div>
+                    <div id="parte-de-baixo">
+                        <h1 id="nome">Bota Capodarte</h1>
+                        <p id="preço">R$ 299.90</p>
+                    <a href="Ctt.htm" target="blank">
+                              <div id="comprar">
+                                <i id="whatsapp"><svg enable-background="new 0 0 512 512" width="20" height="20" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 9.10936 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg> </a></i>
+                                <a href="Ctt.htm" target="blank"><span>Compre via WhatsApp</span></a>
+            
+                        </div>
+                    </a>
+                    </div>
+               </div>
+            
+                <div class="image-produtos" id="n-34-35-38-39">
+                    <div id="parte-de-cima">
+                        <img src="Imagens/Bazar-Bota.jpg" id="bazarbota" class="image-fluid" alt="" onmouseenter="Entrou5()">
+                        <img src="Imagens/Bazar-Bota-removebg-preview.png "  id="bazar-bota" class="hover" alt="" onmouseout="Saiu5()">
+                    </div>
+                    <div id="parte-de-baixo">
+                        <h1 id="nome">Bota Capodarte Cano Longo</h1>
+                        <p id="preço">R$ 279.93</p>
+                    </div>
+                    <a href="Ctt.htm" target="blank">
+                        <div id="comprar">
+                            <i id="whatsapp"><svg enable-background="new 0 0 512 512" width="20" height="20" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 9.10936 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg> </a></i>
+                            <a href="Ctt.htm" target="blank"><span>Compre via WhatsApp</span></a>
+                      </div>
+                    </a>
+                </div>
+
+
+                <div class="image-produtos" id="n-34-36-37">
+
+                            <div id="parte-de-cima">
+                                <img src="Imagens/Bota-removebg-preview.png" id="Bota" class="image-fluid" alt="" onmouseenter="Entrou1()">
+                                <img src="Imagens/Just-Bota.png" id="Just-Bota" class="hover" alt="" onmouseout="Saiu1()" >
+                            </div>
+                        
+                                <div id="parte-de-baixo">
+                                    <h1 id="nome">Bota - Empório Luna</h1>
+                                    <p id="preço">R$ 160.93</p>
+                                </div>
+                            
+                            <a href="Ctt.htm" target="blank">
+                                <div id="comprar">
+                                    <i id="whatsapp"><svg enable-background="new 0 0 512 512" width="20" height="20" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 9.10936 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg> </a></i>
+                                    <a href="Ctt.htm" target="blank"><span>Compre via WhatsApp</span></a>
+                            </div>
+                            </a>
+
+                </div> 
+        
+<!--Números 35 -> id="n-34-35-38-39" -> id="n-34-35-36-37-38" -> id="n-34-36-37" -->  
+
+            <div class="image-produtos" id="n-35-36-38-39">                
+                <div id="parte-de-cima">
+                    <img src="Imagens/Bota-removebg-preview.png" id="Bota2" class="image-fluid" alt="" onmouseenter="Entrou2()">
+                    <img src="Imagens/Bota-removebg-preview-removebg-preview.png" id="Bota-2" class="hover" alt="" onmouseout="Saiu2()">
+                </div>
+
+                <div id="parte-de-baixo">
+                    <h1 id="nome">Bota - Empório Luna</h1>
+                    <p id="preço">R$ 174.93</p>
+                </div>
+                <a href="Ctt.htm" target="blank">
+                    <div id="comprar">
+                        <i id="whatsapp"><svg enable-background="new 0 0 512 512" width="20" height="20" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 9.10936 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg> </a></i>
+                        <a href="Ctt.htm" target="blank"><span>Compre via WhatsApp</span></a>
+                  </div>
+                </a>
+            </div>
+     
+
+<!--Números 36 ->  id="n-35-36-38-39" -> id="n-34-36-37" -> id="n-34-35-36-37-38" -->
+            
+
+            <div class="image-produtos" id="n-36-37-39">
+                <div id="parte-de-cima">
+                    <img src="Imagens/Arezzo-Bota.jpg" id="BotaArezzo" class="image-fluid" alt="" onmouseenter="Entrou4()">
+                    <img src="Imagens/Arezzo-Bota-removebg-preview.png"  id="Bota-Arezzo" class="hover" alt="" onmouseout="Saiu4()">
+                </div>
+
+                <div id="parte-de-baixo">
+                    <h1 id="nome">Bota Arezzo </h1>
+                    <p id="preço">R$ 189.90</p>
+                </div>
+                <a href="Ctt.htm" target="blank">
+                    <div id="comprar">
+                        <i id="whatsapp"><svg enable-background="new 0 0 512 512" width="20" height="20" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 9.10936 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg> </a></i>
+                        <a href="Ctt.htm" target="blank"><span>Compre via WhatsApp</span></a>
+                  </div>
+                </a>
+            </div>
+
+
+
+            
+<!--Números 37 -> id="n-36-37-39" -> id="n-34-36-37" -> id="n-34-35-36-37-38" -> id="n-34-35-37"> -->
+
+            <div class="image-produtos" id="n-37-38-39">
+                <div id="parte-de-cima">
+                    <img src="Imagens/Bota-Arezzo.jpg" id="arezzoBota" class="image-fluid" alt="" onmouseenter="Entrou6()">
+                    <img src="Imagens/Bota-Arezzo-removebg-preview.png" class="hover" id="arezzoBotaHover" alt="" onmouseout="Saiu6()">
+                </div>
+
+                <div id="parte-de-baixo">
+                    <h1 id="nome">Bota Arezzo</h1>
+                    <p id="preço">R$ 99.90</p>
+                </div>
+
+
+                <a href="Ctt.htm" target="blank">
+                    <div id="comprar">
+                        <i id="whatsapp"><svg enable-background="new 0 0 512 512" width="20" height="20" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 9.10936 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg> </a></i>
+                        <a href="Ctt.htm" target="blank"><span>Compre via WhatsApp</span></a>
+                  </div>
+                </a>
+
+            </div>
+
+
+
+            <div class="image-produtos">
+                <img src="" class="image-fluid" alt="">
+            </div>
+
+
+
+            <div class="image-produtos">
+                <img src="" class="image-fluid" alt="">
+            </div>
+
+
+
+            <div class="image-produtos">
+                <img src="" class="image-fluid" alt="">
+            </div>
+
+
+
+           <div class="image-produtos">
+                    <img src="" class="image-fluid" alt="">
+                </div>
+
+
+            <div class="image-produtos">
+                <img src="" class="image-fluid" alt="">
+            </div>
+       </div>
+</div>
+
+</main>
+
+<footer>
+    <a href="Botas.html" >
+        <input class="active" type="button" value="1">
+    </a>
+    <a href="Botas-segunda-pág.html">
+        <input id="Otherpage" type="button" value="2">
+    </a>
+    <a href="Botas-segunda-pág.html">
+        <input id="Other-page" type="button" value=">">
+    </a>
+</footer>
+
+    <a href="#">
+        <div id="top">
+            <div id="button">
+              <p id="arrow">top</p>
+            </div>
+        </div>
+    </a>
+    <script src="arrow.js"></script>
+</body>
+</html>

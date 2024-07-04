@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+
+/*Filtro números 34*/
+#btn-34:checked ~ #n-35-36-38-39{
+    display: none;
+}#btn-34:checked ~ #n-36-37-39{
+    display: none;
+}#btn-34:checked ~ #n-37-38-39{
+    display: none;
+}#btn-34:checked ~ #n-34-36-37{
+    display: flex;
+}
+
+/*Filtro número 35*/
+#btn-35:checked ~ #n-35-36-38-39{
+    display: flex;
+}#btn-35:checked ~ #n-34-36-37{
+    display: none;
+}#btn-35:checked ~ #n-36-37-39{
+    display: none;
+}#btn-35:checked ~ #n-37-38-39{
+    display: none;
+}
